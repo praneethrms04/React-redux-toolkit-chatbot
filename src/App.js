@@ -1,7 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
 import Loader from "./components/Loader";
+import "./App.css";
 const HomeLoad = lazy(() => import("./pages/HomePage"));
 const ChatLoad = lazy(() => import("./pages/ChatPage"));
 const ConfirmLoad = lazy(() => import("./pages/ConfirmationPage"));
