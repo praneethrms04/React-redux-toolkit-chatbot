@@ -12,7 +12,7 @@ const HomePage = () => {
 
           <h4 className="mb-8 text-medium font-bold text-black sm:text-2xl md:mb-12 md:text-3xl">
             Educational Excellence Starts Here: Join the Student Management
-            Revolution{" "}
+            Revolution
           </h4>
 
           <div className="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center">

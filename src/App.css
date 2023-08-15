@@ -7,6 +7,17 @@
   pointer-events: none;
 }
 
+.react-chatbot-kit-user-chat-message {
+  background-color: hwb(220 2% 64%) !important;
+  padding: 10px;
+  width: 100px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #fff !important;
+  font-weight: medium;
+  position: relative;
+  text-align: center !important;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

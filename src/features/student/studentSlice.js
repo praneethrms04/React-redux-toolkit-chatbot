@@ -1,7 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  allStudents: [],
   student: {
     name: "",
     age: "",
@@ -9,7 +8,7 @@ const initialState = {
 };
 
 export const stdentSlice = createSlice({
-  name: "student",
+  name: "students",
   initialState,
   reducers: {
     addStudentName: (state, action) => {

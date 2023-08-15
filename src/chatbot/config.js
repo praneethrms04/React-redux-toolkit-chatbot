@@ -2,14 +2,22 @@ import { createChatBotMessage } from "react-chatbot-kit";
 import GotitButton from "../components/GotitButton";
 import UserInput from "../components/UserInput";
 import AgeSelector from "../components/AgeSelector";
-const botMessage = "Student Info System";
 
+const botMessage = "Student Info System";
 const config = {
   initialMessages: [
     createChatBotMessage(`Hello, Welcome to ${botMessage}`, {
       widget: "gotItButton",
     }),
   ],
+  customStyles: {
+    botMessageBox: {
+      backgroundColor: "#376B7E",
+    },
+    chatButton: {
+      backgroundColor: "#5ccc9d",
+    },
+  },
   widgets: [
     {
       widgetName: "gotItButton",

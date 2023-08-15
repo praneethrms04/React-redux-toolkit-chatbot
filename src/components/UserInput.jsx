@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React, {useState } from "react";
+import { useDispatch } from "react-redux";
 import { addStudentName } from "../features/student/studentSlice";
 import { createClientMessage } from "react-chatbot-kit";
 
@@ -7,7 +7,6 @@ const UserInput = (props) => {
   const [name, setName] = useState("");
 
   const dispatch = useDispatch();
-  useSelector((state) => state.student.student.name);
   dispatch(addStudentName(name));
 
   const handleFunction = (event) => {
@@ -23,9 +22,9 @@ const UserInput = (props) => {
 
   return (
     <div>
-      UserInput
       <input
         type="text"
+        className="p-1 border bg-stone-200"
         placeholder="Enter Your name"
         value={name}
         onChange={(e) => setName(e.target.value)}
